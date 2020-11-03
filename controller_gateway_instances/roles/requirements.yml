@@ -1,6 +1,6 @@
 ---
 roles:
-- name: nginxinc.nginx
+- name: nginxinc.ansible-role-nginx
   src: https://github.com/nginxinc/ansible-role-nginx.git
   version: 0.17.2
   type: git
