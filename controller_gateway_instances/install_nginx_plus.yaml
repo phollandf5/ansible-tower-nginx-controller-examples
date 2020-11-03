@@ -50,8 +50,10 @@
   - name: install nginx plus
     collections:
       - nginxinc.nginx_core
+
     roles:
-      - role: nginx
+      - nginxinc.nginx
+
 
   - name: stop nginx plus
     service:
