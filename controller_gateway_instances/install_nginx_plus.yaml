@@ -50,8 +50,8 @@
       file: "{{playbook_dir}}/nginx_plus_vars.yaml"
 
   - name: install nginx plus
-    roles:
-      - role: nginx
+    roles: 
+      - nginx
 
   - name: stop nginx plus
     service:
