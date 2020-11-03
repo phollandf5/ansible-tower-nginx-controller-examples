@@ -52,7 +52,7 @@
 
   - name: install nginx plus
     include_role:
-      name: nginxinc.nginx_core.nginx
+      name: nginx
 
   - name: stop nginx plus
     service:
