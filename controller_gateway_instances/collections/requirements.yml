@@ -1,3 +1,7 @@
 ---
 collections:
 - name: nginxinc.nginx_controller
+
+- name: nginxinc.ansible-collection-nginx
+  src: https://github.com/nginxinc/ansible-collection-nginx
+  type: git
