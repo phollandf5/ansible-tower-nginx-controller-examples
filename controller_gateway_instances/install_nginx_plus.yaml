@@ -52,7 +52,7 @@
 
   - name: install nginx plus
     include_role:
-      name: nginx
+      name: ansible-role-nginx
 
   - name: stop nginx plus
     service:
