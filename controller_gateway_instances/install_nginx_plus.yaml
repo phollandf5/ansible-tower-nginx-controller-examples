@@ -51,9 +51,6 @@
     collections:
       - nginxinc.nginx_core
 
-    roles:
-      - nginxinc.nginx
-
 
   - name: stop nginx plus
     service:
