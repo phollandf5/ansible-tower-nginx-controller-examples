@@ -48,9 +48,8 @@
       file: "{{playbook_dir}}/nginx_plus_vars.yaml"
 
   - name: install nginx plus
-    collections:
-      - nginxinc.nginx_core
-
+    include_role:
+      name: nginxinc.nginx
 
   - name: stop nginx plus
     service:
