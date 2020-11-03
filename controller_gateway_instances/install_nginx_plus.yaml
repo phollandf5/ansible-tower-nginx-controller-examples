@@ -52,7 +52,7 @@
 
   - name: install nginx plus
     roles:
-      - role: nginx
+      role: nginx
 
   - name: stop nginx plus
     service:
