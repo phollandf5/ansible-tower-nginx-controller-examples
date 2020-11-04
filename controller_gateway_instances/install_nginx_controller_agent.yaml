@@ -5,7 +5,7 @@
 
   tasks:
   - include_role:
-      name: nginxinc.nginx_controller.nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
 
   - name: Get controller api key for agent registration
     uri:
