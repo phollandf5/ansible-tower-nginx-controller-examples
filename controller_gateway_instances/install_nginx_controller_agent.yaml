@@ -3,6 +3,9 @@
   gather_facts: false
   connection: local
 
+  collections:
+    - nginxinc.nginx_controller
+ 
   tasks:
   - include_role:
       name: nginxinc.nginx_controller_generate_token
