@@ -5,3 +5,6 @@ roles:
   version: 0.17.2
   type: git
 
+- name: nginxinc.nginx_controller_generate_token
+  src: https://github.com/nginxinc/ansible-role-nginx-controller-generate-token
+  type: git
