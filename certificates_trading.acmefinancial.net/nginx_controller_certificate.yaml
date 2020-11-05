@@ -13,4 +13,4 @@
 
   - name: upsert the certificate object
     include_role:
-      name: nginx_controller_certificate
+      name: nginxinc.nginx_controller_certificate
