@@ -6,7 +6,7 @@
 
   tasks:
   - include_role:
-      name: nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
 
   - name: load the vars
     include_vars: vars.yaml
