@@ -7,7 +7,7 @@
 
   tasks:
   - include_role:
-      name: nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
 
   - name: find the api spec files
     find:
@@ -27,7 +27,7 @@
 
 # Import each API specification
   - include_role:
-      name: nginx_controller_api_definition_import
+      name: nginxinc.nginx_controller_api_definition_import
     vars:
       nginx_controller_api_definition_version: "{{ (((item.path | basename).split('_'))[3]).split('.')[0] }}"
       nginx_controller_api_definition_name: "{{ ((item.path | basename).split('_'))[2] }}"
