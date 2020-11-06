@@ -21,7 +21,7 @@
       nginx_controller_appName: "{{ nginx_controller_app.metadata.name }}"
 
   - include_role:
-      name: nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
   
 
   - name: read main component
@@ -29,7 +29,7 @@
       file: "{{ playbook_dir }}/component_main.yaml"
   - name: upsert the component
     include_role:
-      name: nginx_controller_component
+      name: nginxinc.nginx_controller_component
 
 
   - name: read files component
@@ -37,7 +37,7 @@
       file: "{{ playbook_dir }}/component_files.yaml"
   - name: upsert the component
     include_role:
-      name: nginx_controller_component
+      name: nginxinc.nginx_controller_component
 
 
   - name: read referrals component
@@ -45,7 +45,7 @@
       file: "{{ playbook_dir }}/component_referrals.yaml"
   - name: upsert the component
     include_role:
-      name: nginx_controller_component
+      name: nginxinc.nginx_controller_component
 
 
   - name: read transfers component
@@ -53,4 +53,4 @@
       file: "{{ playbook_dir }}/component_transfers.yaml"
   - name: upsert the component
     include_role:
-      name: nginx_controller_component
+      name: nginxinc.nginx_controller_component
