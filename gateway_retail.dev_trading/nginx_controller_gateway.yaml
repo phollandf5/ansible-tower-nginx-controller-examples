@@ -15,4 +15,4 @@
 
   - name: configure the gateway
     include_role:
-      name: nginx_controller_gateway
+      name: nginxinc.nginx_controller_gateway
