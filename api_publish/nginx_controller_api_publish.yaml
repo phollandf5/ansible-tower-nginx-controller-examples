@@ -7,10 +7,10 @@
 
   tasks:
   - include_role:
-      name: nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
 
   - include_role:
-      name: nginx_controller_publish_api
+      name: nginxinc.ansible_role_nginx_controller_publish_api
     # vars:
     #   nginx_controller_environment: "demo"
     #   nginx_controller_application: "sports-results"
