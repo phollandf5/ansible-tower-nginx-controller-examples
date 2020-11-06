@@ -11,7 +11,7 @@
     include_vars: "{{ playbook_dir }}/vars.yaml"
 
   - include_role:
-      name: nginx_controller_generate_token
+      name: nginxinc.nginx_controller_generate_token
 
   - name: configure the gateway
     include_role:
